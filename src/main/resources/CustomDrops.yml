@@ -1,0 +1,42 @@
+FortunableBlock: []
+UnHopperableItems: []
+Block:
+  GREEN_GLAZED_TERRACOTTA:
+    30:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: GOLD_NUGGET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lSaphir
+  CYAN_GLAZED_TERRACOTTA:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §d§lRubis
+  BROWN_GLAZED_TERRACOTTA:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: NETHERITE_INGOT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6§lTopaze
+  LIME_GLAZED_TERRACOTTA:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: NETHER_STAR
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §a§lAzonium
+Entity:
+  PHANTOM:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: GOLD_INGOT
+Plantation:

@@ -1,0 +1,401 @@
+Title: "Menu des Sanctions"
+Groups:
+  Chat:
+    Material: "PAPER"
+    Name: "§6Chat"
+    Lore: ["§aSanction pour le chat"]
+    Permission: "azostaff.chat.use"
+    Slot: 0
+    Reasons:
+      1:
+        Material: "DISPENSER"
+        Name: "§2Spam"
+        Lore:
+          - "§bLe joueur spam le chat"
+          - ""
+          - "§cSanction : Mute 1h"
+        Slot: 18
+        Permission: "azostaff.chat.spam"
+        Sanction:
+          Type: "TEMP_MUTE"
+          Time: "1h"
+          Reason: "Spam dans le chat"
+        Messages:
+          Modo: "Tu viens de mute %PLAYER% pour spam"
+      2:
+        Material: "PAPER"
+        Name: "§2Pub"
+        Lore:
+          - "§bLe joueur pub"
+          - "§bun autre serveur ou autre ..."
+          - ""
+          - "§cSanction: Mute 1j"
+        Slot: 19
+        Permission: "azostaff.chat.pub"
+        Sanction:
+          Type: "TEMP_MUTE"
+          Time: "1d"
+          Reason: "Pub dans le chat"
+        Messages:
+          Modo: "Tu viens de mute %PLAYER% pour pub"
+      3:
+        Material: "STONE_SWORD"
+        Name: "§2Insultes"
+        Lore:
+          - "§bLe joueur insulte un autre joueur"
+          - ""
+          - "§cSanction: Mute 1h"
+        Slot: 27
+        Permission: "azostaff.chat.insultes"
+        Sanction:
+          Type: "TEMP_MUTE"
+          Time: "1h"
+          Reason: "Insultes dans le chat / message privé"
+        Messages:
+          Modo: "Tu viens de mute %PLAYER%"
+      4:
+        Material: "BARRIER"
+        Name: "§2Insultes staff"
+        Lore:
+          - "§bLe joueur insulte un membre du Staff"
+          - ""
+          - "§cSanction: Mute 1j "
+        Slot: 28
+        Permission: "azostaff.chat.insultesstaff"
+        Sanction:
+          Type: "TEMP_MUTE"
+          Time: "1d"
+          Reason: "Insultes un membre du staff"
+        Messages:
+          Modo: "Tu viens de mute %PLAYER% pour insultes staff"
+      5:
+        Material: "STONE_SWORD"
+        Name: "§2Menaces"
+        Lore:
+          - "§bLe joueur menaces un autre joueur"
+          - ""
+          - "§cSanction: Mute 12h"
+        Slot: 36
+        Permission: "azostaff.chat.menaces"
+        Sanction:
+          Type: "TEMP_MUTE"
+          Time: "12h"
+          Reason: "Menaces dans le chat / message privé"
+        Messages:
+          Modo: "Tu viens de mute %PLAYER%"
+      6:
+        Material: "DIAMOND_SWORD"
+        Name: "§2Menaces grave"
+        Lore:
+          - "§ble joueur porte des menaces grave"
+          - "§bà l'encontre d'un joueur"
+          - ""
+          - "§cSanction: Mute 1j"
+        Slot: 37
+        Permission: "azostaff.chat.menacesg"
+        Sanction:
+          Type: "TEMP_MUTE"
+          Time: "1d"
+          Reason: "Menaces graves dans le chat / message privé"
+        Messages:
+          Modo: "Tu viens de mute %PLAYER%"
+      7:
+        Material: "BARRIER"
+        Name: "§2Menaces staff"
+        Lore:
+          - "§ble joueur menaces un membre du staff"
+          - ""
+          - "§cSanction: Ban 2j"
+        Slot: 38
+        Permission: "azostaff.chat.menacesstaff"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "2d"
+          Reason: "Menaces un membre du Staff"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour menace un membre du Staff"
+  Triche:
+    Material: "GOLDEN_SWORD"
+    Name: "§6Triche"
+    Lore: ["§aSanction pour triche"]
+    Permission: "azostaff.triche.use"
+    Slot: 1
+    Reasons:
+      1:
+        Material: "DIAMOND_SWORD"
+        Name: "§2Aimbot"
+        Lore:
+          - "§bLe joueur utilise un aimbot"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 18
+        Permission: "azostaff.triche.aimbot"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: Aimbot"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour aimbot"
+      2:
+        Material: "ENCHANTING_TABLE"
+        Name: "§2Kill aura"
+        Lore:
+          - "§bLe joueur utilise un kill aura"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 19
+        Permission: "azostaff.triche.killaura"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche de combat"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour kill aura"
+      3:
+        Material: "COMMAND_BLOCK"
+        Name: "§2Auto Clicker"
+        Lore:
+          - "§bLe joueur utilise un autoclick"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 20
+        Permission: "azostaff.triche.autoclick"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: Auto clicker"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER pour autoclick"
+      4:
+        Material: "COBWEB"
+        Name: "§2Anti KB"
+        Lore:
+          - "§bLe joueur utilise un anti kb"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 21
+        Permission: "azostaff.triche.antikb"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: Anti KB"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour anti KB"
+      5:
+        Material: "ELYTRA"
+        Name: "§2Jesus"
+        Lore:
+          - "§bLe joueur utilise un cheat jesus"
+          - "§b(levite au dessus de l'eau/ lave)"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 27
+        Permission: "azostaff.triche.jesus"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: Jesus"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour jesus"
+      6:
+        Material: "FEATHER"
+        Name: "§2Fly"
+        Lore:
+          - "§bLe joueur fly"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 28
+        Permission: "azostaff.triche.fly "
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: fly"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER%"
+      7:
+        Material: "SLIME_BLOCK"
+        Name: "§2High jump"
+        Lore:
+          - "§bLe joueur utilise un High jump"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 29
+        Permission: "azostaff.triche.hj"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: High jump"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER%"
+      8:
+        Material: "DIAMOND_CHESTPLATE"
+        Name: "§2Auto armor"
+        Lore:
+          - "§bLe joueur utilise un auto armor"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 36
+        Permission: "azostaff.triche.autoarmor"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: Auto armor"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER%"
+      9:
+        Material: "STICKY_PISTON"
+        Name: "§2Auto farm"
+        Lore:
+          - "§bLe joueur utilise un auto farm"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 37
+        Permission: "azostaff.triche.autofarm"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "15d"
+          Reason: "Triche: Auto Farm"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour auto farm"
+      10:
+        Material: "DARK_OAK_DOOR"
+        Name: "§2TP kill"
+        Lore:
+          - "§bLe joueur tp kill un autre joueur"
+          - ""
+          - "§cSanction: Ban 3j"
+        Slot: 38
+        Permission: "azostaff.triche.tpkill"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "3d"
+          Reason: "Triche: TP kill"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour tp kill"
+      11:
+        Material: "ARROW"
+        Name: "§2Spawn kill"
+        Lore:
+          - "§bLe joueur spawn kill un autre"
+          - ""
+          - "§cSanction: Ban 12h"
+        Slot: 39
+        Permission: "azostaff.triche.spawnkill"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "12h"
+          Reason: "Triche: Spawn kill"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour spawn kill"
+      12:
+        Material: "CAMPFIRE"
+        Name: "§2Duplication"
+        Lore:
+          - "§bLe joueur duplique un item"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 40
+        Permission: "azostaff.triche.dupli"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Triche: Duplication"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour duplication"
+      13:
+        Material: "GOLD_INGOT"
+        Name: "§2Arnaque"
+        Lore:
+          - "§bArnaque un joueur dans le /trade"
+          - ""
+          - "§cSanction: Ban 3j"
+        Slot: 45
+        Permission: "azostaff.triche.arnaque"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "7d"
+          Reason: "Arnaque"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour arnaque"
+  Autre:
+    Material: "BOOK"
+    Name: "§6Autre"
+    Lore: ["§aAutres sanctions."]
+    Permission: "azostaff.autre.use"
+    Slot: 2
+    Reasons:
+      1:
+        Material: "NAME_TAG"
+        Name: "§2Pseudo incorrecte"
+        Lore:
+          - "§bLe joueur à un pseudo incorrecte"
+          - ""
+          - "§cSanction: Ban 1j"
+        Slot: 18
+        Permission: "azostaff.autre.pseudo"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "1j"
+          Reason: "Votre pseudo est incorrecte, merci de le changer"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour pseudo incorrecte"
+      2:
+        Material: "STONE"
+        Name: "§2Structures incorrecte"
+        Lore:
+          - "§bLe joueur à fait un build non convenable"
+          - ""
+          - "§cSanction: Ban 2j"
+        Slot: 19
+        Permission: "azostaff.autre.build"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "2j"
+          Reason: "Structures incorrecte"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour structures incorrecte"
+      3:
+        Material: "POWERED_RAIL"
+        Name: "§2Report abusif"
+        Lore:
+          - "§bLe joueur report sans raison valide de nombreuses fois"
+          - ""
+          - "§cSanction: Ban 12h"
+        Slot: 20
+        Permission: "azostaff.autre.report"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "12h"
+          Reason: "Report abusif"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour report abusif"
+      4:
+        Material: "SHEEP_SPAWN_EGG"
+        Name: "§2Contournement de sanction"
+        Lore:
+          - "§bLe joueur contourne sa sanction"
+          - ""
+          - "§cSanction: Ban 30j"
+        Slot: 21
+        Permission: "azostaff.autre.bypass"
+        Sanction:
+          Type: "TEMP_BAN"
+          Time: "30d"
+          Reason: "Contournement de sanction"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour contournement de sanction"
+      5:
+        Material: "CACTUS"
+        Name: "§2Double compte"
+        Lore:
+          - "§bLe joueur à deux comptes"
+          - ""
+          - "§cSanction: Ban à vie du double compte"
+        Slot: 22
+        Permission: "azostaff.autre.dc"
+        Sanction:
+          Type: "BAN"
+          Time: "0"
+          Reason: "Double compte"
+        Messages:
+          Modo: "Tu viens de ban %PLAYER% pour double compte"

@@ -1,0 +1,9 @@
+Item-Type: "GOLD_HOE"
+Name: "§6Hoe de vente"
+Lore: ["§6Clique droit pour vendre ton coffre", "Utilisation restante : %USE%"]
+Lore-Utilisation: 5
+Allow-Sell:
+  - CHEST
+Command-Give-Money: "money give %PLAYER% %AMOUNT%"
+ItemsSales:
+  COOKED_BEEF: 2

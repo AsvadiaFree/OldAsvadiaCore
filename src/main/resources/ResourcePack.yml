@@ -1,0 +1,8 @@
+URLS:
+  '1_16': https://www.dropbox.com/s/mse8vnn61f8p56p/%C2%A7f%C2%A7lASVADIA%20PACK%20%C2%A74%C2%A7lV1.0.77.zip?dl=1
+TimeBeforeLoad: 10
+TimeBeforeKick: 60
+RefuseKick: false
+ErrorKick: false
+NoReplyKick: false
+LobbyServerName: lobby

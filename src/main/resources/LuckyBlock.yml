@@ -1,0 +1,24 @@
+Material: ORANGE_GLAZED_TERRACOTTA
+TimeBeforeOpen: 3
+Particles:
+  Type: VILLAGER_ANGRY
+  Number: 100
+  Height: 6
+Rewards:
+  '1':
+    Type: DROP
+    Item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: COAL_ORE
+  '2':
+    Type: EFFECT
+    PotionType: LEVITATION
+    Duration: 10
+    Amplifier: 10
+  '3':
+    Type: COMMAND
+    Command: clear %PLAYER%
+  '4':
+    Type: COMMAND
+    Command: '%PLAYER%'

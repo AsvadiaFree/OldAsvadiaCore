@@ -1,0 +1,147 @@
+General:
+  noOpCommandEnable: false
+  EnableModules:
+    JoinLeave: true
+    DisableDeathMessage: true
+    ResourcePack: true
+    DurabilityBossBar: false
+    LuckyBlock: true
+    Recipes: true
+    Permissions: true
+    Effects: true
+    Staff: true
+    Sanction: true
+    XRay: true
+    TopLuck: true
+    AutoAlertTopLuck: true
+    AutoLog: true
+    RTP: true
+    HoeSell: true
+    CustomCommands: true
+    WebHooks: true
+    AutoSpawn: true
+  JoinLeave:
+    JoinMessage: '&8[&2+&8] &a%PLAYER%'
+    LeaveMessage: '&8[&4-&8] &c%PLAYER%'
+  Toggle:
+    ActionBar:
+      Default: true
+      Messages:
+        SetON: "Tu viens d'activer l'ActionBar !"
+        SetOFF: "Tu viens de désactiver l'ActionBar' !"
+    BossBar:
+      Default: true
+      Messages:
+        SetON: "Tu viens d'activer la BossBar !"
+        SetOFF: "Tu viens de désactiver la BossBar !"
+    DurabilityBossBar:
+      Default: true
+      Messages:
+        SetON: "Tu viens d'activer la Boss Bar de Durabilité !"
+        SetOFF: "Tu viens de désactiver la Boss Bar de Durabilité !"
+    Title:
+      Default: true
+      Messages:
+        SetON: "Tu viens d'activer les titles !"
+        SetOFF: "Tu viens de désactiver les titles !"
+  Repair:
+    TimeBetweenUse: 172800000
+    PatternLore: '&7Durabilité: &a%DURABILITY% &7/ &a%DURABILITY%'
+  RepairAll:
+    TimeBetweenUse: 172800000
+  DurabilityBar:
+    Title: '%ITEM% : %CURRENTDURABILITY% / %MAXDURABILITY%'
+    Color: GREEN
+    Type: SOLID
+    IntervalUpdate: 0.5
+  AutoRespawn:
+    RespawnWorld: "world"
+    From:
+      - "faction"
+      - "minage"
+  AutoSpawn:
+    Command: "spawn %PLAYER%"
+  Recipes:
+    GOLD_PLATE:
+      Enable: true
+      Damage: 0.5
+      Interval: 20
+  Permissions:
+    RepairPermission: "Asvadia.Repair"
+    RepairAllPermission: "Asvadia.RepairAll"
+    Staff: "Staff.cmd"
+    XRay: "Staff.XRAY"
+    Sanction: "sanction.cmd"
+    RTP: "RTP.%TIME%"
+    Permissions:
+      Use: "asvadia.restrict.use.%ID%"
+      Break: "asvadia.restrict.break.%ID%"
+      Place: "asvadia.restrict.place.%ID%"
+      Take: "asvadia.restrict.take.%ID%"
+  Messages:
+    General:
+      BaseTab: "/ac <toggle>"
+      ToggleTab: "/ac toggle <Title/ActionBar/BossBar/DurabitlityBar>"
+      SuccessFullSend: "Tu viens d'envoyer %TYPE% à %PLAYER% !"
+      SuccessFullRegisterItemStack: "Tu viens d'enregistrer ton Item dans le fichier ItemStacks.yml"
+      SuccessFullRepair: "Tu viens de réparer ton item !"
+      ErrorRepair: "Tu ne peux pas réparer ceci !"
+      WaitBeforeRepair: "Tu dois encore attendre %TIME% avant de pouvoir repair !"
+      NoPermissionRepair: "Tu n'as pas la permission de faire un repair !"
+      SuccessFullRepairAll: "Tu viens de réparer ton item !"
+      WaitBeforeRepairAll: "Tu dois encore attendre %TIME% avant de pouvoir repair !"
+      NoPermissionRepairAll: "Tu n'as pas la permission de faire un repair !"
+      UniqueReload: "Tu viens de reload la config : %CONFIG% !"
+      ReloadAll: "Tu viens de reload toutes les configs !"
+      ReloadConfigNotFound: "Cette config n'éxiste pas !"
+    CustomDrops:
+      SuccessfulAddedCustomBlock: "Tu viens d'ajouter avec succès un custom block !"
+      SuccessfulAddedCustomEntity: "Tu viens d'ajouter avec succès une custom Entity !"
+      SuccessfulAddedCustomPlantation: "Tu viens d'ajouter avec succès une custom Plantation !"
+    Permissions:
+      SuccessfulAddedCustomPermission: "Tu viens d'ajouter avec succès une custom Permission !"
+      CantUse: "1"
+      CantBreak: "2"
+      CantPlace: "3"
+      CantTake: "4"
+    ResourcePack:
+      RefuseKick: "Tu as refusé de télécharger le pack"
+      RefuseChat: ""
+      ErrorKick: "Une erreur est survenu lors du téléchargement !"
+      ErrorChat: ""
+      NoReplyKick: "Merci de télécharger Asvadia Launcher"
+      NoReplyChat: ""
+      SuccessLoad: "Le pack est bien load !"
+    ItemStacks:
+      SuccessfulGetCustomItemStack: "Tu viens d'ajouter avec succès un custom ItemStack, regarde le fichier ItemStack.yml !"
+    Effects:
+      CantEffectAmount: "Tu ne peux pas utiliser"
+      CooldownActionBar: '&c» Vous devez attendre :&b %TIME% &cseconde(s) !'
+      ApplyEffect: '&c» &al''effect a bien été appliquer avec succès !'
+      NoItemInHand: '&cErreur, Vous n''avez pas d''item dans la main !'
+      UnclaimFinderDisabled: "Cette unclaimfinder est désactivé !"
+    Staff:
+      NoPermission: "Tu n'as pas la permission de faire cette commande !"
+      AnyPlayerFound: "Aucun joueur n'a été trouvé !"
+      SuccessfulTeleport: "Tu viens d'être téléporté au joueur %PLAYER%"
+      VanishOn: "Tu viens d'activer le vanish"
+      VanishOFF: "Tu viens de désactiver le vanish"
+      FreezeOn: "Tu viens de freeze %PLAYER%"
+      ClickedPlayerFreezeOn: "Tu viens d'être freeze par %PLAYER%"
+      FreezeOFF: "Tu viens de defreeze %PLAYER%"
+      ClickedPlayerFreezeOFF: "Tu viens d'être defreeze par %PLAYER%"
+      AvouePlayer: "Le joueur %PLAYER% vient d'avouer !"
+    Sanction:
+      NotFullCommand: "/ss <player>"
+    RTP:
+      SuccessfulRTP: "§2§lRTP §f» §aVous venez d'être téléporté aléatoirement dans le monde §2Faction §a!"
+      SuccessfulRTPPlayer: "§2§lRTP §f» §aVous venez de téléporter le joueur %PLAYER% !"
+      WaitBeforeRTP: "§2§lRTP §f» §aVous devez encore attendre §2%TIME% §a minutes avant de pouvoir réutiliser le RTP !"
+    HoeSell:
+      Start-Sale: "Vente en cours :"
+      Command-HoeSell-No-Permission: "Désolé mais tu n'as pas la permission d'éxécuter cette commande !"
+      Give-Item: "Voici ta hoe ! "
+      Successful-Sale: "Tu viens de vendre %NUMBER% %MATERIAL% pour %AMOUNT% !"
+      Snicking-Refuse: "Pour vendre, tu ne dois pas t'accroupir !"
+      Break-Item: "Tu viens de casser ta hoe de vente !"
+      No-Item-Sale: "Tu n'as rien vendu !"

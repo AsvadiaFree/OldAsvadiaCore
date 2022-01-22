@@ -1,0 +1,104 @@
+SPEED:
+  lore: '&7▪ &2Effet de: &aVitesse II'
+  time: 120
+  amplifier: 1
+STRENGTH:
+  lore: '&7▪ &2Effet de: &aForce I'
+  time: 120
+  amplifier: 1
+HASTE:
+  lore: '&7▪ &2Effet de: &aHaste II'
+  time: 120
+  amplifier: 1
+SCEPTRE:
+  lore: '&7▪ &2Effet de: &aRégénération II&2; &aRésistance I'
+  cooldown: false
+  cooldown_time: 30
+BALLOON:
+  name: §6Ballon
+  lore: '§7Durabilité: §c%CURRENTDURABILITY% §7/ §a%MAXDURABILITY%'
+  durability: 255
+LBALLOON:
+  name: §6§lBallon Légendaire
+CHESTVIEWER:
+  lore: '&7▪ &aAffiche le contenu d''''un coffre &2enemis'
+  guiname: '&2&lInspection du Coffre'
+DYNAMITE:
+  lore: '&7▪ &aExplose en un clique !'
+  distanceMultiply: 1.25
+  power: 4
+  first:
+    Item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: DISPENSER
+    TimeBeforeChange: 3
+  second:
+    Item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_BLOCKS: 3
+    TimeBeforeChange: 3
+DYNAMITESPONGE:
+  lore: '&7▪ &2Caractéristique: &aExplose sous l''eau'
+  distanceMultiply: 1.25
+  first:
+    Item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: DISPENSER
+    TimeBeforeChange: 3
+  second:
+    Item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_BLOCKS: 3
+    TimeBeforeChange: 3
+CAVEBLOCK:
+  lore: '&7▪ &aPermet de voir à travers les murs'
+  duration: 10
+  distance: 15
+NUKE:
+  item: YELLOW_GLAZED_TERRACOTTA
+  power: 10
+  dispense: true
+PARCHMENT:
+  defaultlore: '&fParchemin'
+  afteruselore:
+    - '&2&lFaction: &r&a%FACTION%'
+    - null: null
+    - null: null
+  nofhomefound: '&cAucun home de faction n''a été trouvé !'
+RLTNT:
+  lore: '&7▪ &aPermet de envoyer des TnT'
+  distanceMultiply: 3
+  power: 4
+  messages:
+    WaitBeforeReLaunche: Attends avant de relancer une rocket
+RLNUKE:
+  lore: '&7▪ &aPermet de envoyer des Nuke en l''air'
+  distanceMultiply: 4
+  messages:
+    WaitBeforeReLaunche: '&cAttendez avant de relancer une rocket'
+HAMMER:
+  lore: '&7▪ &aPermet de miner en &23x3'
+  blockBreakable: []
+UNCLAIMFINDER:
+  commun:
+    enable: true
+    durability: 200
+    lore: '&6Unclaim Finder Commun'
+    radius: 1
+    actionbar: '&2Commun : &a%result%'
+    detecteblock:
+      - CHEST

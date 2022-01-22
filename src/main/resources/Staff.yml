@@ -1,0 +1,80 @@
+XRayBlockVisible: ["IRON_ORE", "COAL_ORE", "GOLD_ORE", "DIAMOND_ORE", "REDSTONE_ORE", "BROWN_GLAZED_TERRACOTTA", "LIME_GLAZED_TERRACOTTA", "CYAN_GLAZED_TERRACOTTA", "GREEN_GLAZED_TERRACOTTA"]
+Gui:
+  Player:
+    Title: "Inspection de %PLAYER%"
+  FactionTopLuck:
+    Title: "Top luck Faction"
+  FreezeGUI:
+    Title: "Tu es freeze"
+    Items:
+      Reavel:
+        Name: "Avouer"
+        Lore: []
+        Material: "DIAMOND_SWORD"
+        Slot: 11
+      Info:
+        Name: "Tu as des questions ?"
+        Lore:
+          - "§bSite web: azonia.eu"
+          - "§6Discord: https://discord.gg/JahEHNVxPb"
+        Material: "PAPER"
+        Slot: 15
+      AcceptReavel:
+        Name: "Accepté"
+        Lore: []
+        Material: "EMERALD_BLOCK"
+        Slot: 12
+      DenyReavel:
+        Name: "Annulé"
+        Lore: []
+        Material: "REDSTONE_BLOCK"
+        Slot: 14
+      IsReavel:
+        Name: "Tu as avoué"
+        Lore: []
+        Material: "DIAMOND_PICKAXE"
+        Slot: 11
+Stuff:
+  0:
+    Material: "STICK"
+    Name: "&2Test de KB"
+    Lore: [ "§aTape un joueur pour testé son kb" ]
+    Permission: "test"
+    Slot: 0
+    Enchantement:
+      Level: 2
+  2:
+    Material: "LEGACY_WATCH"
+    Name: "&2Téléportation aléatoire"
+    Lore: [ "§aTéléport aux joueurs" ]
+    Permission: "test"
+    Slot: 2
+  4:
+    Material: "GOLDEN_HOE"
+    Name: "&2Vanish"
+    Lore: [ "§aTe cache" ]
+    Permission: "test"
+    Slot: 4
+  6:
+    Material: "BOOK"
+    Name: "&2Inspection"
+    Lore: [ "§aInspecte le joueur" ]
+    Permission: "test"
+    Slot: 6
+  8:
+    Material: "PACKED_ICE"
+    Name: "&2Freeze"
+    Lore: [ "§aFreeze le joueur" ]
+    Permission: "test"
+    Slot: 8
+  FactionTopLuck:
+    Material: "DIAMOND_PICKAXE"
+    Name: "&2TopLuck"
+    Lore: [ "§aVoici le top luck" ]
+    Permission: "test"
+    Slot: 22
+  XRay:
+    Material: "DIAMOND_PICKAXE"
+    Name: "Top luck du Faction"
+    Lore: ["XRAY"]
+    Slot: 10

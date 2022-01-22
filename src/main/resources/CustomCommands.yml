@@ -1,0 +1,5 @@
+minage:
+  command: "mv tp minage %PLAYER%"
+  permission: "Minage"
+  onlyplayer: true
+  playercommand: true

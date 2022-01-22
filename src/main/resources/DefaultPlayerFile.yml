@@ -1,0 +1,7 @@
+RepairTime: 0
+RepairAllTime: 0
+Toggle:
+  ActionBar: true
+  BossBar: true
+  DurabilityBar: true
+  Title: true
